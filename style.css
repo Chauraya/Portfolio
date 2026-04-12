@@ -127,6 +127,22 @@ body.light .visit-btn{
 body.light .counter-item p{
     color: #555;
 }
+.home-container{
+    dispaly: flex;
+    flex-direction: column;
+     align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1.5rem;
+}
+.home-container h1{
+    background: linear-gradient(to right, #009dff, #ff00ff);
+    background-clip: text;
+    color: transparent;
+    font-size: 1.8rem;
+    font-weight: 600;
+    opacity: 0.8;
+}
 .skills{
     padding: 60px 20px;
     text-align: center;
@@ -203,10 +219,17 @@ section{
     justify-content: center;
     gap:10rem;
 }
-.about img{
+.about .about-counter img{
     width:30vw;
     border-radius: 50%;
+    box-shadow: 0 0 60px rgba(0, 245, 160, 0.2);
 }
+.about .about-container .text p{
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
 .about img:hover{
     transform: scale(1.05);
 }
@@ -226,6 +249,9 @@ section{
 .infor-box h1{
     font-size: 4rem;
     font-weight: 600;
+    background: linear-gradient(to right, #009dff, #ff00ff);
+    background-clip: text;
+    color: transparent;
 }
 .infor-box span{
   background: linear-gradient(to right, rgb(0, 157, 255), rgb(255, 0, 255));
@@ -240,6 +266,7 @@ section{
 .btn{
     padding: 0.5rem 1.5rem;
     border-radius: 3rem;
+    color: white;
     border: 2px solid white;
     cursor: pointer;
     font-weight: 300;
@@ -269,8 +296,12 @@ body.light .btn:active{
 .socials{
     display: flex;
     gap: 2rem;
+    justify-contet: center;
 }
 .socials i{
+    align-items: center;
+    justify-content: center;
+    padding-top: 1.5rem;
     font-size: 2.5rem;
     cursor: pointer;
     transition: 0.2s ease-in-out;
